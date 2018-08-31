@@ -7,9 +7,6 @@
     <a href="https://scrutinizer-ci.com/g/theaentmachine/aent-generic/?branch=master">
         <img src="https://scrutinizer-ci.com/g/theaentmachine/aent-generic/badges/quality-score.png?b=master" alt="Scrutinizer">
     </a>
-    <a href="https://codecov.io/gh/theaentmachine/aent-generic/branch/master">
-        <img src="https://codecov.io/gh/theaentmachine/aent-generic/branch/master/graph/badge.svg" alt="Codecov">
-    </a>
 </p>
 
 ---
