@@ -3,11 +3,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use TheAentMachine\AentApplication;
-use TheAentMachine\AentGeneric\Command\StartEventCommand;
+use \TheAentMachine\Aent\ServiceAent;
+use \TheAentMachine\AentGeneric\Event\AddEvent;
 
-$application = new AentApplication();
-
-$application->add(new StartEventCommand());
-
+$application = new ServiceAent("Generic", new AddEvent());
 $application->run();
