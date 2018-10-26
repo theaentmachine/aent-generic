@@ -2,7 +2,7 @@
 
 # aent-generic [![Travis CI](https://travis-ci.org/theaentmachine/aent-generic.svg?branch=master "Travis CI")](https://travis-ci.org/theaentmachine/aent-generic) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/theaentmachine/aent-generic/badges/quality-score.png?b=master "Scrutinizer Code Quality")](https://scrutinizer-ci.com/g/theaentmachine/aent-generic/?branch=master) [![Layers](https://images.microbadger.com/badges/image/theaentmachine/aent-generic.svg)](https://microbadger.com/images/theaentmachine/aent-generic "Layers") [![Version](https://images.microbadger.com/badges/version/theaentmachine/aent-generic.svg)](https://microbadger.com/images/theaentmachine/aent-generic "Version")
 
-An aent for adding a service which does not have an exisint aent.
+An aent for adding a service which does not have an existing aent.
 
 ## Usage
 
