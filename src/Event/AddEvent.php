@@ -41,7 +41,7 @@ final class AddEvent extends AbstractServiceAddEvent
         }
         $bindVolume = $this->getBindVolume();
         if (!empty($bindVolume)) {
-            $service->addBindVolume($bindVolume->getSource(), $bindVolume->getTarget());
+            $service->addBindVolume('./' . $bindVolume->getSource(), $bindVolume->getTarget());
         }
         $ports = $imageService->getInternalPorts($image);
         if (!empty($ports)) {
@@ -87,7 +87,8 @@ final class AddEvent extends AbstractServiceAddEvent
             $helpText = "Workspace is the default directory of the image. For instance, <info>/var/www/html</info> or <info>/usr/src/app</info>.";
             $target = $this->prompt->input($text, $helpText, null, true, ValidatorHelper::getAbsolutePathValidator()) ?? '';
             $text = "\n<info>Application directory</info> (relative to the project root directory)";
-            return $this->prompt->getPromptHelper()->getBindVolume($text, $target);
+            $source = $this->prompt->input($text, $helpText, null, true, ValidatorHelper::getRelativePathValidator()) ?? '';
+            return new BindVolume($source, $target);
         }
         return null;
     }
